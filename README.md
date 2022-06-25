@@ -1,3 +1,3 @@
-# Maching App for KOYO festival
+# Matching App for KOYO festival
 
 frontend
