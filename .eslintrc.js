@@ -5,6 +5,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
+  ignorePatterns: ['jest.*.js', '.storybook/*.js'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -13,6 +14,7 @@ module.exports = {
     'next/core-web-vitals',
     'google',
     'prettier',
+    'plugin:storybook/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -31,9 +33,11 @@ module.exports = {
     quotes: ['error', 'single'],
     'require-jsdoc': ['off'],
     'newline-before-return': 'error',
+
     /* react-hooks */
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+
     /* react */
     'react/jsx-pascal-case': 'error',
     'react/jsx-sort-props': 'error',
@@ -46,6 +50,7 @@ module.exports = {
         html: false,
       },
     ],
+
     /* Typescript */
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'error',
@@ -66,6 +71,7 @@ module.exports = {
         },
       },
     ],
+
     /* import */
     'import/order': [
       'error',
