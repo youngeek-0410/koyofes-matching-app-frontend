@@ -1,0 +1,19 @@
+.module {
+  padding: 0.8em 2.4em;
+  font-size: 18px;
+  border: 0;
+  border-radius: 3em;
+  color: #fff;
+  background: black;
+  cursor: pointer;
+}
+
+.module:hover {
+  color: black;
+  background: gray;
+}
+
+.module[disabled] {
+  pointer-events: none;
+  background-color: #9fa5b1;
+}
