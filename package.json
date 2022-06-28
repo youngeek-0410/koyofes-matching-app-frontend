@@ -61,6 +61,7 @@
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
     "lint-staged": "^12.4.0",
+    "msw": "^0.42.3",
     "prettier": "^2.6.2",
     "sass-loader": "^13.0.1",
     "sort-package-json": "^1.57.0",
@@ -70,5 +71,8 @@
   },
   "engines": {
     "npm": "Use 'yarn' as the package manager for this project. Not 'npm'."
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
